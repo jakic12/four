@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">    
+    <style>
+        body {
+            font-family:'monospace';
+            display: flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        body > div {
+            border:3px solid black;
+            padding:10px;
+            height:200px;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;;
+        }
+
+        body > div.end {
+            border:5px solid green;
+        }
+    </style>
+</head>
+<body>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+    <button onclick="bfs()"></button>
+    <div>
+        <h1>0</h1>
+        <div id="0-latex"></div>
+        <div id="0-cost"></div>
+    </div>
+    <div>
+        <h1>1</h1>
+        <div id="1-latex"></div>
+        <div id="1-cost"></div>
+    </div>
+    <div>
+        <h1>2</h1>
+        <div id="2-latex"></div>
+        <div id="2-cost"></div>
+    </div>
+    <div>
+        <h1>3</h1>
+        <div id="3-latex"></div>
+        <div id="3-cost"></div>
+    </div>
+    <div>
+        <h1>4</h1>
+        <div id="4-latex"></div>
+        <div id="4-cost"></div>
+    </div>
+    <div>
+        <h1>5</h1>
+        <div id="5-latex"></div>
+        <div id="5-cost"></div>
+    </div>
+    <div>
+        <h1>6</h1>
+        <div id="6-latex"></div>
+        <div id="6-cost"></div>
+    </div>
+    <div>
+        <h1>7</h1>
+        <div id="7-latex"></div>
+        <div id="7-cost"></div>
+    </div>
+    <div>
+        <h1>8</h1>
+        <div id="8-latex"></div>
+        <div id="8-cost"></div>
+    </div>
+    <div>
+        <h1>9</h1>
+        <div id="9-latex"></div>
+        <div id="9-cost"></div>
+    </div>
+    <script src="thing.js"></script>
+</body>
+</html>
